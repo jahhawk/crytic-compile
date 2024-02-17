@@ -79,6 +79,7 @@ class SourceUnit:
         self._srcmaps_runtime: Dict[str, List[str]] = {}
         self.ast: Dict = {}
         self.identifier: int = -1
+        self.generated_sources: Dict = {}
 
         # Natspec
         self._natspec: Dict[str, Natspec] = {}

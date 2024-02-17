@@ -377,6 +377,7 @@ def parse_standard_json_output(
                 source_unit.srcmaps_runtime[contract_name] = info["evm"]["deployedBytecode"][
                     "sourceMap"
                 ].split(";")
+                source_unit.generated_sources[contract_name] = info["evm"]["bytecode"]["generatedSources"]
 
 
 # Inherits is_dependency/is_supported from Solc
