@@ -334,6 +334,7 @@ def parse_standard_json_output(
                 )
             source_unit = compilation_unit.create_source_unit(path)
 
+            source_unit.identifier = info.get("id")
             source_unit.ast = info.get("ast")
 
     if "contracts" in targets_json:

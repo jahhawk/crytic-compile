@@ -195,6 +195,15 @@ class SourceUnit:
     ###################################################################################
 
     @property
+    def identifier(self) -> int:
+        """Return the identifier of the source unit
+
+        Returns:
+            int: Identifier
+        """
+        return self.identifier
+
+    @property
     def srcmaps_init(self) -> Dict[str, List[str]]:
         """Return the srcmaps init
 
