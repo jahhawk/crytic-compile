@@ -78,6 +78,7 @@ class SourceUnit:
         self._srcmaps: Dict[str, List[str]] = {}
         self._srcmaps_runtime: Dict[str, List[str]] = {}
         self.ast: Dict = {}
+        self.identifier: int = -1
 
         # Natspec
         self._natspec: Dict[str, Natspec] = {}
@@ -193,15 +194,6 @@ class SourceUnit:
     # region Source mapping
     ###################################################################################
     ###################################################################################
-
-    @property
-    def identifier(self) -> int:
-        """Return the identifier of the source unit
-
-        Returns:
-            int: Identifier
-        """
-        return self.identifier
 
     @property
     def srcmaps_init(self) -> Dict[str, List[str]]:
